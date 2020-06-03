@@ -1,21 +1,19 @@
-# Template NextJS Project
+# Central Auth Service
 
-a template next.js project. Suitable for serverful applications.
+provides client/user authentication/registration/management, RBAC authorization and session management.
 
 # Author
 
 [onichandame](https://github.com/onichandame)
 
-# Features
+# Environment Setup
 
-- Next.js
-- Typescript
-- i18n
-- Express.js
-- Material-UI
-- system theme
-- GraphQL
+Requires MongoDB. IP of Mongo instance can be passed in `MONGO_ADDR` env variable
 
-# Known Issues
+Requires NATS. IP of NATS instance can be passed in `NATS_ADDR` env variable.
 
-1. warning of using getInitialProps instead of getServerSideProps. Due to an import from next-18next
+# Usage
+
+```bash
+yarn && yarn start
+```
